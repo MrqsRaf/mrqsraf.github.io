@@ -4512,6 +4512,7 @@ hero-btn {
 
 .slider-area .hero__caption {
     overflow: hidden;
+    display: flex;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -10196,8 +10197,18 @@ del {
     margin-bottom: 10px;
 }
 
-.flotte {
-    float: left;
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.centrai {
+    margin: auto;
+}
+
+.contact-style {
+    margin-left: 20%;
 }
 
 
