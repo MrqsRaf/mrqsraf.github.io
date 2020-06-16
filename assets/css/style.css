@@ -1373,7 +1373,8 @@ hero-btn {
 /* line 483, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 
 .mb-70 {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 
@@ -4872,7 +4873,6 @@ hero-btn {
     position: absolute;
     content: "";
     width: 70px;
-    height: 100px;
     border: 2px solid #292c32;
     left: 0;
     z-index: 0;
@@ -4897,7 +4897,7 @@ hero-btn {
 
 /* line 29, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_our-info.scss */
 
-.our-info-area .single-info .info-caption p {
+.our-info-area .single-info .info-caption li {
     color: #a1a1a1;
     font-size: 14px;
     margin-bottom: 0px;
@@ -4908,6 +4908,16 @@ hero-btn {
     line-height: 1.4;
 }
 
+.our-info-area .single-info .info-caption p {
+    color: #a1a1a1;
+    font-size: 14px;
+    margin-bottom: 0px;
+    display: block;
+    font-weight: 300;
+    font-style: italic;
+    padding-left: 93px;
+    line-height: 1.4;
+}
 
 /* line 1, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_professional-service.scss */
 
