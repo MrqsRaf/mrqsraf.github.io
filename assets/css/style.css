@@ -10225,19 +10225,13 @@ del {
     margin-left: 40%;
 }
 
-.info-caption-perso {
+.info-caption-perso p {
     position: relative;
     color: #a1a1a1;
-    font-size: 14px;
-    margin-bottom: 0px;
+    font-size: 15px;
     display: block;
     font-weight: 300;
     font-style: italic;
-    padding-left: 93px;
-    line-height: 1.4;
-    width: 70px;
-    left: 0;
-    z-index: 0;
-    top: -24px;
+    padding-left: 18%;
 }
 /*# sourceMappingURL=style.css.map */
