@@ -3672,6 +3672,11 @@ hero-btn {
     padding-bottom: 5%;
 }
 
+.section-padding31 {
+    padding-top: 5%;
+    padding-bottom: 30%;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     /* line 789, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
     .section-padding30 {
@@ -10234,4 +10239,55 @@ del {
     font-style: italic;
     padding-left: 18%;
 }
+
+.parcours-barre {
+    border-radius: 5px;
+    content: "";
+    height: 100%;
+    width: 6px;
+    background:#d51317;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.parcours-point::before {
+    content: '';
+    height: 7px;
+    width: 7px;
+    background: #fff;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 53%;
+    top: 4px;
+    transform: translateX(-50%);
+}
+
+.parcours-point {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+
+.parcours-texte {
+    display: flex;
+}
+
+.parcours-date {
+    padding-right: 100px;
+}
+
+.parcours-texte .parcours-date p {
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
