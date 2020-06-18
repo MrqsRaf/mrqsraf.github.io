@@ -10282,7 +10282,7 @@ del {
 }
 
 .parcours-date {
-    padding-right: 250px;
+    width: 350px;
 }
 
 .parcours-texte .parcours-date p {
@@ -10306,10 +10306,44 @@ del {
 }
 
 .list-parcours {
-    display: flex;
     align-items: center;
     flex-direction: column;
     padding-top:50px;
+    width: 80;
+    padding-left: 300px;
 }
 
+.progress_br {
+    border: 1px solid #eeeeee;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+
+.progress-bar2 {
+    width: 0%;
+    transition: width .6s ease;
+    height: 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+    align-self: center;
+    background-image: -webkit-linear-gradient(0deg, #ff0000 0%, #ffffff 100%);
+}
+
+.progress2 {
+    display: flex;
+    overflow: hidden;
+    height: 10px;
+    font-size: .75rem;
+    background-color: #87898af6;
+    border-radius: 10px;
+}
+
+.progress-text h4 {
+    font-size: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
