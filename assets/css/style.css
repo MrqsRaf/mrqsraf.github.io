@@ -3694,8 +3694,8 @@ hero-btn {
 /* line 789, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 
 .section-padding30 {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .section-padding31 {
@@ -3878,8 +3878,8 @@ hero-btn {
 /* line 881, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 
 .section-padding3 {
-    padding-top: 195px;
-    padding-bottom: 100px;
+    padding-top: 5%;
+    padding-bottom: 3%;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4533,7 +4533,6 @@ hero-btn {
 
 .slider-area {
     position: relative;
-    background-image: url(../img/hero/h1_hero.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -4953,14 +4952,14 @@ hero-btn {
 /* line 1, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_professional-service.scss */
 
 .professional-services {
-    height: 800px;
+    height: 500px;
     width: 100%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     /* line 1, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_professional-service.scss */
     .professional-services {
-        height: 654px;
+        height: 500px;
     }
 }
 
@@ -4968,7 +4967,7 @@ hero-btn {
 /* line 8, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_professional-service.scss */
 
 .profession-caption {
-    margin-top: -418px;
+    margin-top: -291px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4997,7 +4996,7 @@ hero-btn {
 
 .profession-caption .profession-details {
     background: #fff;
-    padding: 90px;
+    padding: 60px;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -5093,7 +5092,7 @@ hero-btn {
 .services-area .single-services .services-caption h3 a {
     color: #222222;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 23px;
     display: block;
 }
 
@@ -5291,11 +5290,6 @@ hero-btn {
 
 /* line 3, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_gallery.scss */
 
-.gallery-area {
-    background: #0c0f16;
-}
-
-
 /* line 5, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_gallery.scss */
 
 .gallery-area .single-gallery {
@@ -5441,6 +5435,7 @@ hero-btn {
     display: block;
     text-align: center;
     border-radius: 50%;
+    margin-left: 40px;
 }
 
 
@@ -5453,7 +5448,7 @@ hero-btn {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    margin-left: 75px;
+    margin-left: 40px;
 }
 
 
@@ -8260,6 +8255,7 @@ hero-btn {
     border-bottom: none;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding: 30px;
 }
 
 
@@ -10384,3 +10380,51 @@ del {
     font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
+.logo2 {
+    font-weight: bold;
+}
+
+.contactpage {
+    padding-top: 5%;
+}
+
+.semestre {
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.modal-content h4 {
+    text-align: center;
+    font-family: "Barlow Condensed", sans-serif;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: normal;
+}
+
+.modal-content h5 {
+    font-family: "Barlow Condensed", sans-serif;
+    color: black;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: normal;
+    padding: 30px;
+    padding-bottom:0px;
+}
+
+.modal-content p {
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+.modal-content ul {
+    padding: 30px;
+}
+
+.modal-content li {
+    list-style: disc;
+}
