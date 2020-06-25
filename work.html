@@ -24,6 +24,13 @@
    </head>
 
    <body class="body-bg">
+    <script>
+        function displayModal() {
+            let url = new URL(location.href);
+            let modal = url.searchParams.get("modal");
+            document.getElementById(modal).click();
+        }
+    </script>
     <!--? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -104,7 +111,7 @@
                                 </div>
                                 <div class="thumb-content">
                                     <h3><span>Protocole F01</span>Informatique</h3>
-                                     <button type="button" class="fas fa-angle-right beuteun" data-toggle="modal" data-target=".protocole"></button>
+                                     <button type="button" class="fas fa-angle-right beuteun" data-toggle="modal" data-target=".protocole"  id="protocole"></button>
                                 </div>
                             </div>
                         </div>
@@ -222,35 +229,35 @@
                   <div class="modal fade vgaia" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        vgaia
+                        À venir !
                       </div>
                     </div>
                   </div>
                   <div class="modal fade thedoor" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        thedoor
+                        À venir !
                       </div>
                     </div>
                   </div>
                   <div class="modal fade jfh" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        BONJOUR
+                        À venir !
                       </div>
                     </div>
                   </div>
                   <div class="modal fade goodrentree" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        BONJOUR
+                        À venir !
                       </div>
                     </div>
                   </div>
                   <div class="modal fade springtech" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        BONJOUR
+                        À venir !
                       </div>
                     </div>
                   </div>
@@ -326,6 +333,8 @@
 		<!-- Jquery Plugins, main Jquery -->	
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
-        
+        <script>
+        setTimeout(()=>displayModal(),400);
+        </script>
     </body>
 </html>

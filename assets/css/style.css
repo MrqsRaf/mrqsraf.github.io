@@ -10355,12 +10355,21 @@ del {
 
 .progress-bar2 {
     width: 0%;
-    transition: width .6s ease;
+    -webkit-transition: width .6s ease;
     height: 10px;
     border-radius: 5px;
     vertical-align: middle;
     align-self: center;
     background-image: -webkit-linear-gradient(0deg, #ff0000 0%, #ffffff 100%);
+}
+
+@keyframes progress2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
 }
 
 .progress2 {
