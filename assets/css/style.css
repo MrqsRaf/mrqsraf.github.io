@@ -10443,8 +10443,8 @@ del {
 }
 
 .single-team img {
-    height: 30%;
-    width: 30%;
+    width: 15%;
+    padding-left: 3%;
 }
 
 .logocomp {
@@ -10454,4 +10454,15 @@ del {
 .imagecomp {
     margin-top: -6%;
     padding-bottom: 5%;
+}
+
+.descriptcomp {
+    margin-left: 40%;
+    color: white;
+    font-weight: bold;
+    width: 80%;
+}
+
+.descript {
+    float: left;
 }
