@@ -10467,7 +10467,7 @@ del {
     float: left;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 400px) {
+@media only screen and (min-width: 0px) and (max-width: 770px) {
     /* line 23, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_wantTowork.scss */
     .descript{
         margin-top: 30px;
