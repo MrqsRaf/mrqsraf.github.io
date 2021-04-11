@@ -422,7 +422,7 @@ a:hover,
 
 a,
 button {
-    color: #fff;
+    color: rgb(255, 255, 255);
     outline: medium none;
 }
 
@@ -472,7 +472,6 @@ h5 a,
 h6 a {
     color: inherit;
 }
-
 
 /* line 113, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 
@@ -755,7 +754,7 @@ color: #ff0000;
 /* line 295, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 
 a:hover {
-    color: #000;
+    color: #d51317;
 }
 
 
@@ -10443,7 +10442,7 @@ del {
 }
 
 .single-team img {
-    width: 15%;
+    width: 10%;
     padding-left: 3%;
 }
 
@@ -10452,7 +10451,7 @@ del {
 }
 
 .imagecomp {
-    margin-top: -6%;
+    margin-top: -3%;
     padding-bottom: 5%;
 }
 
