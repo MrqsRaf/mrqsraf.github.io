@@ -10481,8 +10481,102 @@ del {
         float: left;
         padding-bottom: 10%;
     }
-    
+
     .mb-30 {
         margin-bottom: 10%;
     }
+}
+
+.modal_competence_aline {
+    display: -webkit-inline-box;
+}
+
+.modal_competence {
+    margin-left: auto ;
+}
+
+.btn_competence {
+    background: #ff1313;
+    padding: 27px 44px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 0px;
+    -moz-user-select: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+.btn2_competence {
+    width: 150%;
+    padding: 45px 0;
+}
+
+.btn_competence::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 101%;
+    height: 101%;
+    background: #fff;
+    color: #000 !important;
+    z-index: 1;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+    border-radius: 0;
+}
+
+.btn_competence:hover::before {
+    transform: scaleX(1);
+    color: #000000 !important;
+    z-index: -1;
+}
+
+.btn_competence:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
+    .btn2_competence {
+        margin-top: 30px;
+        padding: 35px 0;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
+    .btn2_competence {
+        padding: 35px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
+    .btn2_competence {
+        padding: 35px 0;
+    }
+}
+
+button:hover {
+    color: #d51317;
 }

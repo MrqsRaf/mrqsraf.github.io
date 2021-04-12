@@ -23,6 +23,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+<body class="body-bg">
+    <script>
+        function displayModal() {
+            let url = new URL(location.href);
+            let modal = url.searchParams.get("modal");
+            document.getElementById(modal).click();
+        }
+    </script>
 
 <body class="body-bg">
     <!-- Preloader Start -->
@@ -100,7 +108,7 @@
                     <div class="container ">
                         <div class="column">
                             <!-- single Tem -->
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm- modal_competence_aline">
                                 <div class="single-team mb-30 ">
                                     <div class="logocomp">
                                         <div class="progress-text" id="systeme">
@@ -120,8 +128,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-md-6 modal_competence">
+                                    <button type="button" data-toggle="modal" data-target=".systeme" id="systeme" class="btn_competence btn2_competence">Découvrir Systeme</button>
+                                </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm- modal_competence_aline">
                                 <div class="single-team mb-30 ">
                                     <div class="logocomp">
                                         <div class="progress-text">
@@ -137,12 +148,16 @@
                                     <div class="progress_br">
                                         <div class="progress2">
                                             <div class="progress-bar2" aria-valuenow="85" aria-valuemin="0"
-                                                aria-valuemax="100" style="width: 60%;"></div>
+                                                aria-valuemax="100" style="width: 60%;">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-md-6 modal_competence">
+                                    <button type="button" data-toggle="modal" data-target=".reseaux" id="reseaux" class="btn_competence btn2_competence">Découvrir Réseaux</button>
+                                </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm- modal_competence_aline">
                                 <div class="single-team mb-30 ">
                                     <div class="logocomp">
                                         <div class="progress-text">
@@ -160,8 +175,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-md-6 modal_competence">
+                                    <button type="button" data-toggle="modal" data-target=".virtualisation" id="virtualisation" class="btn_competence btn2_competence">Découvrir Virtualisation</button>
+                                </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm- modal_competence_aline">
                                 <div class="single-team mb-30 ">
                                     <div class="logocomp">
                                         <div class="progress-text">
@@ -169,6 +187,8 @@
                                         </div>
                                         <a href="parcours.html#ods"><img src="assets/img/gallery/ods.png"
                                             class="imagecomp"></a>
+                                        <a href="work.html?modal=vgaia"><img src="assets/img/logo/logo2.png"
+                                                class="imagecomp" style="visibility: hidden;"></a>
                                     </div>
                                     <div class="progress_br">
                                         <div class="progress2">
@@ -177,8 +197,12 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-md-6 modal_competence">
+                                    <button type="button" data-toggle="modal" data-target=".cloud" id="cloud" class="btn_competence btn2_competence">Découvrir Cloud</button>
+                                </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm- modal_competence_aline">
                                 <div class="single-team mb-30 ">
                                     <div class="logocomp">
                                         <div class="progress-text">
@@ -196,8 +220,11 @@
                                         </div>
                                     </div>
                                 </div>
+                            <div class="col-lg-4 col-md-6 modal_competence">
+                                <button type="button" data-toggle="modal" data-target=".web" id="web" class="btn_competence btn2_competence">Découvrir Web</button>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm- modal_competence_aline">
                                 <div class="single-team mb-30 ">
                                     <div class="logocomp">
                                         <div class="progress-text" id="python">
@@ -215,6 +242,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-md-6 modal_competence">
+                                    <button type="button" data-toggle="modal" data-target=".python" id="python" class="btn_competence btn2_competence">Découvrir Python</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -230,7 +260,7 @@
                 <div class="team-area section-padding30 ">
                     <div class="container ">
                         <div class="column ">
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm- modal_competence_aline">
                                 <div class="single-team mb-30 ">
                                     <div class="logocomp">
                                         <div class="progress-text">
@@ -254,8 +284,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-md-6 modal_competence">
+                                    <button type="button" data-toggle="modal" data-target=".autonomie" id="autonomie" class="btn_competence btn2_competence">Découvrir Autonomie</button>
+                                </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm- modal_competence_aline">
                                 <div class="single-team mb-30 ">
                                     <div class="logocomp">
                                         <div class="progress-text">
@@ -273,8 +306,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-md-6 modal_competence">
+                                    <button type="button" data-toggle="modal" data-target=".equipe" id="equipe" class="btn_competence btn2_competence">Découvrir Esprit d'équipe</button>
+                                </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm- modal_competence_aline">
                                 <div class="single-team mb-30 descript">
                                     <div class="logocomp">
                                         <div class="progress-text">
@@ -297,8 +333,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-md-6 modal_competence">
+                                    <button type="button" data-toggle="modal" data-target=".equipe" id="equipe" class="btn_competence btn2_competence">Découvrir Flexibilité</button>
+                                </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm- modal_competence_aline">
                                 <div class="single-team mb-30 ">
                                     <div class="logocomp">
                                         <div class="progress-text">
@@ -322,8 +361,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-md-6 modal_competence">
+                                    <button type="button" data-toggle="modal" data-target=".organisation" id="organisation" class="btn_competence btn2_competence">Découvrir Organisation</button>
+                                </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm- modal_competence_aline">
                                 <div class="single-team mb-30 ">
                                     <div class="logocomp">
                                         <div class="progress-text">
@@ -345,8 +387,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-md-6 modal_competence">
+                                    <button type="button" data-toggle="modal" data-target=".communication" id="communication" class="btn_competence btn2_competence">Découvrir Communication</button>
+                                </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm- modal_competence_aline">
                                 <div class="single-team mb-30 ">
                                     <div class="logocomp">
                                         <div class="progress-text">
@@ -365,6 +410,9 @@
                                                 aria-valuemax="100" style="width: 50%;"></div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 modal_competence">
+                                    <button type="button" data-toggle="modal" data-target=".temps" id="temps" class="btn_competence btn2_competence">Découvrir Gestion du temps</button>
                                 </div>
                             </div>
                         </div>
@@ -397,6 +445,91 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade systeme" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                A venir !
+              </div>
+            </div>
+          </div>
+          <div class="modal fade reseaux" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                À venir !
+              </div>
+            </div>
+          </div>
+          <div class="modal fade virtualisation" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                À venir !
+              </div>
+            </div>
+          </div>
+          <div class="modal fade cloud" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                À venir !
+              </div>
+            </div>
+          </div>
+          <div class="modal fade web" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                À venir !
+              </div>
+            </div>
+          </div>
+          <div class="modal fade python" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                À venir !
+              </div>
+            </div>
+          </div>
+          <div class="modal fade autonomie" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                À venir !
+              </div>
+            </div>
+          </div>
+          <div class="modal fade equipe" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                À venir !
+              </div>
+            </div>
+          </div>
+          <div class="modal fade flexibilite" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                À venir !
+              </div>
+            </div>
+          </div>
+          <div class="modal fade organisation" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                À venir !
+              </div>
+            </div>
+          </div>
+          <div class="modal fade communication" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                À venir !
+              </div>
+            </div>
+          </div>
+          <div class="modal fade temps" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                À venir !
+              </div>
+            </div>
+          </div>
+
         <!-- Hero End -->
     </main>
     <footer>
