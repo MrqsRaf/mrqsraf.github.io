@@ -10309,12 +10309,74 @@ del {
 }
 
 .parcours-texte {
-    display: flex;
+    display: -webkit-inline-box;
     margin-bottom: 150px;
 }
 
 .parcours-date {
-    width: 350px;
+    width: 700px;
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1201px) {
+    /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
+    .parcours-date {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
+    .description_parcours {
+        font-size: 1.5vw;
+    }
+    .parcours-date {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 767px) {
+    /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
+    .description_parcours {
+        font-size: 1.8vw;
+    }
+    .parcours-date {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 650px) {
+    /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
+    .description_parcours {
+        font-size: 1.8vw;
+    }
+    .parcours-date {
+        width: 300px;
+    }
+    .parcours-detail {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
+    .description_parcours {
+        font-size: 2.5vw;
+    }
+    .parcours-date {
+        width: 200px;
+        margin-right: 20%;
+    }
+    .parcours-detail {
+        width: 60%;
+    }
+    .parcours-barre {
+        left: 70%;
+    }
+    .parcours-texte {
+        display: revert;
+        margin-bottom: 80px;
+    }
 }
 
 .parcours-texte .parcours-date p {
@@ -10341,8 +10403,7 @@ del {
     align-items: center;
     flex-direction: column;
     padding-top:50px;
-    width: 80;
-    padding-left: 300px;
+    width: 900px;
 }
 
 .progress_br {
