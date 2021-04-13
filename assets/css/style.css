@@ -10504,7 +10504,7 @@ del {
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1vw;
     border-radius: 0px;
     -moz-user-select: none;
     font-weight: 400;
@@ -10576,6 +10576,37 @@ del {
         padding: 35px 0;
     }
 }
+
+@media only screen and (min-width: 250px) and (max-width: 1100px) {
+    /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
+    .modal_competence_aline {
+        display: contents;
+    }
+    .modal_competence_aline {
+        display: contents;
+    }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 450px) {
+    /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
+    .btn2_competence {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 1100px) {
+    /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
+    .btn2_competence {
+        width: 250%;
+        margin-bottom: 30%;
+    }
+    .modal_competence {
+        position: inherit;
+        margin-left: unset;
+    }
+}
+
 
 button:hover {
     color: #d51317;
