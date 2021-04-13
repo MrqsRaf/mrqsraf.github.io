@@ -5075,7 +5075,7 @@ hero-btn {
 
 .services-area .single-services .services-caption h3 {
     margin-bottom: 15px;
-    line-height: 13px;
+    line-height: 25px;
     font-family: "Barlow", sans-serif;
     position: relative;
     -webkit-transition: all 0.4s ease-out 0s;
@@ -10725,15 +10725,22 @@ button:hover {
 
 @media only screen and (min-width: 401px) and (max-width: 500px) {
     .gallery-img {
-        height: 500px !important;
-        width: 420px !important;
+        height: 450px !important;
+        width: 370px !important;
+    }
+    .responsive_width {
+        width: 90%;
     }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 400px) {
     .gallery-img {
-        height: 470px !important;
-        width: 380px !important;
+        height: 370px !important;
+        width: 300px !important;
+        left: 5%;
+    }
+    .responsive_width {
+        width: 90%;
     }
 }
 
