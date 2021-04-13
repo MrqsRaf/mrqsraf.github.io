@@ -10580,3 +10580,11 @@ del {
 button:hover {
     color: #d51317;
 }
+
+.button_cursor {
+    cursor: pointer;
+}
+
+.modal-open {
+    padding-right: 0 !important;
+  }
