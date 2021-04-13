@@ -10727,6 +10727,7 @@ button:hover {
     .gallery-img {
         height: 450px !important;
         width: 370px !important;
+        left: 5%;
     }
     .responsive_width {
         width: 90%;
