@@ -10577,10 +10577,10 @@ del {
     }
 }
 
-@media only screen and (min-width: 200px) and (max-width: 450px) {
+@media only screen and (min-width: 0px) and (max-width: 500px) {
     /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
     .btn2_competence {
-        width: 120%;
+        width: 100%;
         margin-bottom: 10%;
     }
     .btn_competence {
@@ -10600,20 +10600,19 @@ del {
     }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 1100px) {
+@media only screen and (min-width: 501px) and (max-width: 1200px) {
     /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
     .btn2_competence {
         width: 140%;
         margin-bottom: 10%;
     }
+    .btn_competence {
+        font-size: 2vw;
+    }
     .modal_competence {
         position: inherit;
         margin-left: unset;
     }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1100px) {
-    /* line 308, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
     .modal_competence_aline {
         display: revert;
         margin-left: 1%
@@ -10627,7 +10626,6 @@ del {
         margin-left: 5%;
     }
 }
-
 
 button:hover {
     color: #d51317;
