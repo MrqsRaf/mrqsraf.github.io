@@ -10797,3 +10797,55 @@ button:hover {
 .titre-accueil {
     margin-bottom: 40px;
 }
+
+#competencetransverses {
+    scroll-margin-top: 150px;
+}
+
+#competencetechnique {
+    scroll-margin-top: 150px;
+}
+
+#systeme {
+    scroll-margin-top: 150px;
+}
+
+#reseaux {
+    scroll-margin-top: 150px;
+}
+
+#virtualisation {
+    scroll-margin-top: 150px;
+}
+
+#cloud {
+    scroll-margin-top: 150px;
+}
+
+#web {
+    scroll-margin-top: 150px;
+}
+
+#python {
+    scroll-margin-top: 150px;
+}
+
+#autonomie {
+    scroll-margin-top: 150px;
+}
+
+#equipe {
+    scroll-margin-top: 150px;
+}
+
+#flexibilite {
+    scroll-margin-top: 150px;
+}
+
+#organisation {
+    scroll-margin-top: 150px;
+}
+
+#communication {
+    scroll-margin-top: 150px;
+}
