@@ -116,7 +116,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-xl-6 col-lg-4 col-md-6 mobile">
                         <div role="button"  data-toggle="modal" data-target=".protocole" class="single-gallery mb-30 button_cursor">
                             <div class="gallery-img mobile" style="background-image: url(assets/img/gallery/gallery1_mobile.jpg);"></div>
@@ -131,7 +130,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div role="button"  data-toggle="modal" data-target=".vgaia" class="single-gallery mb-30 button_cursor">
                             <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery2.png);"></div>
@@ -203,7 +201,7 @@
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-4 col-md-6 mobile">
-                        <div role="button"  data-toggle="modal" data-target=".sprinttech" class="single-gallery mb-30 button_cursor">
+                        <div role="button"  data-toggle="modal" data-target=".springtech" class="single-gallery mb-30 button_cursor">
                             <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery6_mobile.png);"></div>
                             <div class="thumb-content-box">
                                 <div class="semestre">
@@ -226,38 +224,74 @@
                             </h4>
                         </div>
                         <div class="modal-body">
-                        <p>Protocole F01 a été l'un des projets que j'ai préféré: Une très bonne entente d'équipe, un projet intéressant techniquement, mais également par son contexte
-                            et le fait que cela aurait pu être un réel projet tout en ayant une histoire de film d'espionnage.
-                        </p>
-                        <br>
-                        <h5>OBJECTIF</h5>
-                        <p>Le but de Protocole F01 est lié à une histoire:<br>
-                            2021, une troisième guerre mondiale risque d’éclater, les Etats-Unis cherchent à empêcher cette nouvelle guerre en dérobant les plans d'attaques de la Corée du Nord. Le Protocole F-01 réunis les meilleurs espions missionnés pour récupérer ces informations.
-                            Un espion doit alors se rendre sur place afin de récuperer une clé usb dissimulée quelque part par un agent infiltré.
-                            La problématique est que si l'espion se fait controlé avec la clé usb ou un ordinateur ayant envoyé ces données il sera repéré.
-                            C'est là que Protocole-F01 intervient: un envoi automatisé, chiffré, et par un réseau sécurisé de tout le contenu d'une clé usb, grâce à... une deuxième clé usb !
-                        </p>
-                        <h5>Description</h5>
-                        <p>Avec l'utilisation d'un système Linux spécifique sur une clé usb, mais également de plusieurs scripts bash et python, l'utilisation était la plus simple possible.
-                            L'espion n'avait qu'a branché la première clé usb, démarrer l'ordinateur, puis brancher la deuxième clé usb afin de chiffrer les données de celle-ci et de les envoyer de façon sécurisée.
-                        </p>
-                        <h5>Technologies</h5>
-                        <ul>
-                            <li><a href="blog.html#systeme">Tails</a>: système Debian démarrant sur clé usb et ne laissant aucune empreinte numérique sur la machine hôte</li>
-                            <li><a href="blog.html#python">Python</a></li>
-                            <li><a href="blog.html#systeme">Scripts bash</a></li>
-                            <li>Tor</li>
-                        </ul>
-                        <h5>Ma contribution</h5>
-                        <p>J'ai beaucoup participé sur ce projet, car j'étais très intéréssé par la partie technique, et que mes coéquipiers ont pu travaillé sur d'autres tâches.
-                        </br>
-                        Ainsi, j'ai pu me concentrer sur les objectifs suivants:
-                        </p>
-                        <ul>
-                            <li>Scripts d'automatisation ( bash et python )</li>
-                            <li>Paramétrage de Tails et de Tor</li>
-                            <li>Chiffrement du contenu de la clé usb (Veracrypt)</li>
-                        </ul>
+                            <p>Protocole F01 a été l'un des projets que j'ai préféré: Une très bonne entente d'équipe, un projet intéressant techniquement, mais également par son contexte
+                                et le fait que cela aurait pu être un réel projet tout en ayant une histoire de film d'espionnage.
+                            </p>
+                            <br>
+                            <h5>Description</h5>
+                            <p>
+     Protocole F01 est lié à une histoire:<br>
+                     2021, une troisième guerre mondiale risque d’éclater, les Etats-Unis cherchent à empêcher cette nouvelle guerre en dérobant les plans d'attaques de la Corée du Nord. Le Protocole F-01 réunis les meilleurs espions missionnés pour récupérer ces informations.</p>
+                                <p>Un espion doit alors se rendre sur place afin de récuperer une clé usb dissimulée quelque part par un agent infiltré.
+                                La problématique est que si l'espion se fait controlé avec la clé usb ou un ordinateur ayant envoyé ces données il sera repéré.
+                                C'est là que Protocole-F01 intervient: un envoi automatisé, chiffré, et par un réseau sécurisé de tout le contenu d'une clé usb, grâce à... une deuxième clé usb !
+                            <p>Avec l'utilisation d'un système Tails sur clé usb, mais également de plusieurs scripts bash et python, l'utilisation était la plus simple possible.
+                                L'espion n'avait qu'a branché la première clé usb, démarrer l'ordinateur, puis brancher la deuxième clé usb afin de chiffrer les données de celle-ci et de les envoyer de façon sécurisée.
+                            </p>
+    <h5>
+    Objectifs
+    </h5>
+
+    <p>
+    Le produit final allait principalement tourner autour de 2 éléments : Le système qui envoie les données, et celui qui les réceptionne.
+
+    Le systèmes envoyant les données se trouvait alors sur Tails, une distribution Linux basée sur Debian, qui avait pour particularité de préserver l’anonymat et la confidentialité.</p>
+    <p>En effet, ce système était installé sur clé USB, et était totalement vierge à chaque redémarrage !
+    Il avait aussi déjà Tor d’installé, ce qui nous permettrait d’envoyer nos données chiffrées et de manière totalement anonyme.</p>
+
+    <p>Nous avions alors plusieurs objectifs sur Tails:</p>
+
+    <p>Tout d’abord, il fallait pouvoir activer une petite partition du système qui serait persistante, et chiffrée, afin de conserver les services nécessaires, et nos scripts d’automatisation.</p>
+
+   <p>Il fallait ensuite pouvoir chiffrer les données demandées, grâce à l’outil Veracrypt.
+    Effectivement, même si le réseau Tor chiffre déjà les données, la connexion entre le premier nœud de ce réseau, et notre système n’est pas chiffré ! Il fallait alors trouver un moyen que les données soient chiffrées de bout en bout.<br>
+
+    Tor était donc la prochaine étape : pouvoir se connecter à ce réseau et envoyer les données à la machine réceptrice.</p>
+
+    <p>Après avoir réussi toutes ces étapes à la main, il fallait tout automatiser !
+
+    Pour le serveur récepteur des données chiffrées, il fallait tout simplement qu’il soit connecté sur le réseau Tor.</p>
+
+    <p>La dernière étape était bien évidemment de posséder une deuxième clé USB, avec des données dites « sensibles » afin de pouvoir envoyer celles-ci de manière sécurisée et anonyme.
+
+    <h5>Résultats</h5>
+    <p>Le résultat a tout simplement été… un succès ! L’automatisation fonctionnait parfaitement, et il suffisait de brancher la clé USB contenant Tails, attendre que le script demande d’insérer la 2ème clé USB contenant les données, et le tour était joué ! Un envoi parfaitement sécurisé, qui ne laisse aucune trace sur l’ordinateur hôte, ou sur le système Tails.</p>
+    </p>
+                            <h5>Ma contribution</h5>
+                            <p>J'ai beaucoup participé sur ce projet, car j'étais très intéréssé par la partie technique, et que mes coéquipiers ont pu travaillé sur d'autres tâches.
+                            </br>
+                            Ainsi, j'ai pu me concentrer sur les objectifs suivants:
+                            </p>
+                            <ul>
+                                <li>Scripts d'automatisation ( bash et python )</li>
+                                <li>Paramétrage de Tails et de Tor</li>
+                                <li>Chiffrement du contenu de la clé usb (Veracrypt)</li>
+                            </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="container">
+                            <div class="row competence-espace">
+                                <h5 class="col-12 text-center modal-text-title">Compétences acquises</h5>
+                            </div>
+                            <div class="row justify-content-center">
+                                <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=systeme">Système</a>
+                                <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=reseaux">Réseaux</a>
+                                <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=python">Python</a>
+                                <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=autonomie">Autonomie</a>
+                                <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=flexibilite">Flexibilité</a>
+                                <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=organisation">Organisation</a>
+                            </div>
+                        </div>
                     </div>
                       </div>
                     </div>
@@ -265,16 +299,93 @@
                   <div class="modal fade vgaia" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        À venir !
+                        <div class="modal-header">
+                            <h4>VGAIA
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Le projet VGAIA a été un gros bond vers l’avant qui nécessitaient de nombreuses capacités, cela m’a permis de voir une net amélioration depuis mon arrivée à INTECH.<br>
+                                 Il aura surtout été une grosse introduction à une technologie que j’utilise quotidiennement en entreprise, et dans mes projets personnels: la virtualisation.</p>
+
+<h5>Description</h5>
+
+<p>VGAIA est un outil permettant rendre fournir et d’automatiser la création d’une infrastructure et l'installation de services sur celles-ci.</p>
+
+<p>Mais concrètement, ça veut dire quoi ?</p>
+
+<p>Cet outil se présentait sous forme d’une plateforme web, avec plusieurs champs à remplir : système d’exploitation, mémoire vive, nombre de CPU, capacité de stockage, services a installés ( MySQL, Apache, Postfix, bind9…).</p>
+
+<p>Ces champs remplis selon les besoins des utilisateurs, étaient ensuite récupérés afin de remplir un outil de provisionning Ansible.
+Ce logiciel de provisinning, comme son nom l’indique, allait créer la machine demandée, et la provisionner, c’est-à-dire, lui apporter les paquets et les configurations nécessaires afin d’avoir une machine prête à l’emploi en seulement quelques minutes.</p>
+
+<p>Cette utilisation qui peut paraitre très simple du point de vue de l’utilisateur, incluait tout de même de nombreux services.</p>
+
+<h5>Objectifs</h5>
+
+<p>Il fallait tout d’abord créer une interface WEB, et l’exposer sur un DNS local (bind9) à l’aide d’un serveur LAMP (Linux Apache MySQL PHP).</p>
+
+<p>Installer ensuite Ansible et le configurer afin qu’il récupère tous les champs nécessaire à la création de la machine venait ensuite.</p>
+
+<p>Afin de pouvoir héberger nos machines virtuelles, nous avions besoin d’une autre équipe dont le projet était la création d’un VCenter, un serveur de  gestion centralisée de machine virtuelles.
+
+Nous devions alors configurer un client VSphere, qui se connecterait à ce VCenter afin d’y installer les machines sur un ESXI dédié.<br>
+Un ESXI est tout simplement un hyperviseur, donc un service permettant au serveur hôte de prendre en charge plusieurs machines virtuelles.</p>
+
+<p>Il fallait ensuite pouvoir envoyer les informations de connexion à l’utilisateur, par mail, qu’il devra changer dès sa première connexion.</p>
+
+
+<h5>Résultats</h5>
+
+<p>Je ne vais pas vous cacher que ce projet a présenté une difficulté qui a altéré grandement l’avancée du projet : L’esprit d’équipe.<br>
+     En effet, il y a eu un gros manque de communication dans cette équipe, ce qui a valu de n’avoir aucun suivi sur nos tâches.</p>
+
+<p>Je vous invite à lire l’article <a href="blog.html?modal=equipe">esprit d’équipe</a> pour en savoir plus!</p>
+
+<p>Malgré cela, quand nous nous sommes rendu comptes de la charge de travail qu’il restait à produire afin de le rendre dans les temps, nous avons d’autant plus travailler afin de rendre un produit fonctionnel.
+
+Lors de la date de fin du projet, nous étions capable de fournir une machine virtuelle à notre utilisateur selon ses besoins, excepté quelques services qui n’étaient pas disponible.<br>
+Par exemple, l’utilisateur pouvait avoir une machine virtuelle avec le système d’exploitation qu’il souhaitait, mais ne pouvait pas décider d’installer Postfix sur celle-ci.</p>
+
+<p>Le projet n’a alors pas été une entière réussite, mais aura tout de même rempli les objectifs principaux.
+
+Pour ma part, ce projet m’a beaucoup apporté techniquement, mais aussi humainement car il m’a fait comprendre l’importance d’avoir une équipe soudée et bien organisée.</p>
+
+<h5>Ma contribution</h5>
+
+<p>J’ai principalement travaillé sur 2 tâches:</p>
+
+<p>La première, était la création de la plateforme WEB, afin de fournir une interface utilisateur afin de paramétrer sa machine virtuelle.</p>
+
+<p>Deuxièmement, j’ai également contribué à la configuration d’Ansible, afin qu’il récupère les options entrées par l’utilisateur, et qu’il s’en serve ensuite pour créer la machine virtuelle.</p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <div class="container">
+                                <div class="row competence-espace">
+                                    <h5 class="col-12 text-center modal-text-title">Compétences acquises</h5>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=systeme">Système</a>
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=virtualisation">Virtualisation</a>
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=web">Web</a>
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=autonomie">Autonomie</a>
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=flexibilite">Flexibilité</a>
+                                </div>
+                            </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="modal fade thedoor" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
+                        <div class="modal-header">
                         <h4>THE DOOR
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                         </h4>
+                        </div>
+                        <div class="modal-body">
                         <p>The Door a été un projet dont je me rappellerai toute ma vie. Je me souviens encore arriver à IN’TECH, sans une once de confiance en moi, très timide et ayant peur du jugement.
                         J’ai alors été mis dans un groupe par défaut pour ce projet, sans savoir qu’il allait changer ma vie.</p>
 
@@ -306,7 +417,7 @@
                             <p>Je ne vais pas le cacher, certains de ces objectifs n’ont pas été une réussite total. Je pense principalement à la communication qui visait à attirer des gens externes à l’école pour qu’ils puissent participer à notre conférence.
                             Il est difficile d’avoir de la visibilité en seulement quelques mois et sans avoir de contact, mais nous avons tout de même eu quelques personnes externes, qui nous ont toutes donné un retour positif !</p>
 
-                            <p>Le projet dans sa généralité était une énorme réussite, et chaque membre du groupe en est sorti avec une énorme confiance en soi.</p>
+                            <p>Le projet dans sa généralité était une énorme réussite, et chaque membre du groupe en est sorti avec une énorme confiance en soi, et une capacité a transmettre ses connaissances aisément.</p>
 
                             <h5>Présentations</h5>
 
@@ -339,6 +450,20 @@
                             <p>Voici les flyers que nous avons distribué:</p>
                             <p><img src="assets/img/gallery/flyer_the_door-final_recto.jpg" class="img-fluid" style="width:400px;height:600px;position:relative;display: block;margin-left: auto;margin-right: auto;"></p>
                             <p><img src="assets/img/gallery/flyer_the_door-final_verso.jpg" class="img-fluid" style="width:400px;height:600px;margin: 5%;display: block;margin-left: auto;margin-right: auto;"></p>
+                        </div>
+                            <div class="modal-footer">
+                                <div class="container">
+                                    <div class="row competence-espace">
+                                        <h5 class="col-12 text-center modal-text-title">Compétences acquises</h5>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=autonomie">Autonomie</a>
+                                        <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=equipe">Esprit d'équipe</a>
+                                        <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=organisation">Organisation</a>
+                                        <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=communication">Communication</a>
+                                    </div>
+                                </div>
+                            </div>
                       </div>
                     </div>
                   </div>
@@ -352,14 +477,128 @@
                   <div class="modal fade goodrentree" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        À venir !
+                        <div class="modal-header">
+                            <h4>GoodRentree
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>GoodRentree est né suite à une discussion avec un ami du lycée qui était passionné par l’auto-entreprenariat. Celui-ci avait déjà fait plusieurs plateformes d’e-commerce, et avait réussi à grandement m’intéresser sur le sujet.<br>
+Il m’a alors proposé de créer notre propre plateforme de dropshipping, et m’a laissé trouver quels produits nous allions vendre sur celle-ci.</p>
+
+<h5>Description</h5>
+
+<p>Comme nous étions au début des vacances, j’ai pensé qu’il serait intéressant de vendre des fournitures scolaires dans les thèmes à la mode de 2018: Fortnite, et les mangas!</p>
+<p>Le DropShipping consiste à vendre un produit que l’on n’entrepose pas nous même. On ne fait que la passerelle entre le client et le fournisseur.
+Le client se rend alors sur notre plateforme, choisi les produits qu’il souhaite, et une fois ces produits achetés, nous nous occupons de transmettre ses informations au fournisseur afin que le client soit directement livré chez lui.</p>
+<p>Le bénéfice se fait alors en vendant le produit légèrement plus cher que si on achète celui-ci directement chez le fournisseur.</p>
+
+<h5>Objectifs</h5>
+
+<p>Pour présenter un produit fonctionnel, et attirer de potentiels clients, il y avait 3 objectifs principaux à accomplir :
+<ul>
+    <li>Créer une plateforme d’e-commerce, l’exposer sur internet, et y ajouter les produits.</li>
+    <li>Mettre en place de l’automatisation, qui commanderai les produits demandés par le client chez le fournisseur, avec les informations de celui-ci.</li>
+    <li>Faire de la communication, grâce aux publicités sur les réseaux sociaux</li>
+</ul>
+
+<h5>Accomplissement des objectifs</h5>
+
+<p>Comme mon ami était sur plusieurs projets en même temps, j’ai décidé de prendre les choses en main, sur toutes les parties que représentaient ce projet. Il était évidemment là pour m’épauler et me guider sur le sujet de la communication principalement, car il avait plus de connaissances dans ce domaine.</p>
+
+<p>J’ai alors créé la plateforme d’e-commerce grâce à un Template open source appelé WooCommerce, dont j’ai ensuite modifié le code source.</p>
+<p>J’ai mis en place l’automatisation grâce à des plugins que l’on pouvait ajouter à ce Template, et ai ajouté tous les produits.</p>
+<p>La partie conséquente dans la création de la plateforme, aura été de lui donner une image professionnelle, ce qui a été la partie la plus difficile, en conséquence de mes capacités en développement Web assez limitées cette année-là.</p>
+
+<p>La communication s’est principalement faite sur Facebook, grâce à leur outil de publicité. Il nous fallait alors choisir une niche, c’est-à-dire un ensemble de personne qui correspondent aux critères recherchés.<br>
+     Pour notre cas, ça aura été par exemple, les parents d’enfants assez jeunes, résidant dans plusieurs pays d’Europe.</p>
+
+<h5>Résultats</h5>
+
+<p>On ne peut pas dire que ce projet a été une réussite, mais il n’a pas été un échec non plus!<br>
+En effet, nous n’avons ni perdu, ni gagner d’argent. Cela a été dû à de grosses dépenses sur la publicité Facebook, mais également à un taux d’engagement assez faible.</p>
+<p>Eh oui, malgré le fait que beaucoup de personnes se rendaient sur notre site-web, je pense qu’à cause de mes capacités assez limitées en design web, celui-ci ne paraissait pas assez professionnel, et décourageait les potentiels client a finalement acheter.</p>
+
+<p>J’ai tout de même décidé d’ajouter ce projet à mon Portfolio, car il m’aura fait progresser en développement Web, et m’aura appris à créer un plan de communication, qui m’aura été utile ensuite pour <a href="work.html?modal=springtech">Springtech</a> et <a href="work.html?modal=thedoor">The Door</a>.</p>
+
+                    </div>
+                        <div class="modal-footer">
+                            <div class="container">
+                                <div class="row competence-espace">
+                                    <h5 class="col-12 text-center modal-text-title">Compétences acquises</h5>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=web">Web</a>
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=autonomie">Autonomie</a>
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=communication">Communication</a>
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=flexibilite">Flexibilité</a>
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=organisation">Organisation</a>
+                                </div>
+                            </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="modal fade springtech" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        À venir !
+                        <div class="modal-header">
+                            <h4>Springtech
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+    <p>Tout comme le projet « The Door », Spring Tech a été un projet qui restera à jamais gravé dans ma mémoire (Décidément, les projets de formation humaine !). Spring Tech a été une expérience qui m’a permis de fortifier les liens avec mes équipiers, mais également de voyager à Berlin et de découvrir une culture différente.</p>
+
+<h5>Description</h5>
+
+<p>Spring Tech avait un objectif très simple :  Organiser un voyage linguistique et convivial en Europe regroupant des étudiants de différents semestres In’tech. Ce voyage durerait environ 3 jours, et allaient comprendre le plus d’activités possibles, avec un prix le plus bas possible !
+Malgré un objectif tournant autour des vacances et de la fête, ce projet demandait une charge de travail conséquente.</p>
+
+<h5>Objectifs</h5>
+
+<p>Les objectifs étaient également très nombreux pour pouvoir proposer un voyage correspondant aux attentes de nos « clients », tout en leur évitant le plus d’interactions possible.</p>
+<ul>
+<li>Générer des recettes pour rendre le prix du voyage le plus abordable possible:</li>
+   <p>Pour pouvoir générer le plus d’argent possible, afin de baisser le prix du voyage pour chacun, nous avons dû organiser des repas et des « cafeteria » au sein de l’école.</p>
+
+<li>Analyser les différentes offres du marché pour proposer les prix les plus bas possible</li>
+	<p>Pour ce faire, nous avons bien évidemment utiliser des comparateurs de transports et d’hôtel, mais nous avons également appelé beaucoup (beaucoup) de compagnies de transports, d’hôtel, afin d’avoir un prix fixe qui nous permettrait d’établir un plan de trésorerie le plus tôt possible. Nous devions également réserver le plus tôt possible afin d’éviter une hausse des prix.</p>
+
+<li>Campagne de communication interne pour attirer le plus de personnes</li>
+<p>La communication au sein de l’école devait se faire assez classiquement. Une campagne de mails et de sondages, des affiches dans toute l’école avec une charte graphique attirante et un passage dans toutes les classes. Mais le meilleur moyen de communication était de proposer un prix bas, car nous proposions ce voyage à des étudiants.</p>
+<li>Mettre en place le voyage, pour que le “client” ait le moins de chose à faire + feuille info pratique</li>
+<p>Cette mise en place comprend toutes les réservations, des logements et des transports, mais surtout l’organisation, du point de rendez-vous, des activités sur place, des budget repas et sortie, etc. C’est ici que la mise en place du planning a été très importante.</p>
+<li>Mise en place d’un planning pour le voyage</li>
+<p>Le planning n’était bien évidemment pas définitif, mais il allait grandement nous servir à prévoir ce qu’il était possible de faire ou non. Il a permis également de faire le plus d’activités possible, en créant des « chemins » en fonction des lieux demandés.</p>
+</ul>
+
+<h5>Ma contribution</h5>
+
+<p>Pour ce qui est de générer des recettes, nous savons tous mis la main à la patte ! Nous étions bien évidemment tous présents afin de vendre nos bons petits plats, ou pour vendre du café et des viennoiseries encore chaudes.</p>
+<p>Mais la partie sur laquelle je me suis le plus penché a été la mise en place des sondages et du planning en fonction des réponses de nos « clients ». J’ai dû établir ce planning pour 3 jours, car il y avait une charge de travail bien assez élevé pour que chaque membre du groupe doive travailler en autonomie.</p>
+
+<h5>Résultats</h5>
+
+<p>La communication était très bien réussi, et beaucoup d’élèves étaient intéressé par ce voyage pour découvrir Berlin, mais malgré un gros travail afin de générer le plus de recettes possibles, le prix était encore un peu trop haut. C’est la principale raison qui en a démotivé beaucoup, et nous sommes finalement partis au total de 8 membres.</p>
+<p>Le voyage en lui-même a été très bien organisé, et tout s’est passé comme on le souhaitait.<br>
+Nous n’avons alors pas vraiment atteint notre objectif pour ce qui était du nombre de participants, mais ce projet a été une énorme réussite pour nous tous, car nous avons réussi à remplir les nombreux objectifs présents pour le bon déroulement de celui-ci</p>
+
+<p><img src="assets/img/gallery/springtech-team.png" class="img-fluid" style="position:relative;display: block;margin-left: auto;margin-right: auto;"></p>
+</div>
+                        <div class="modal-footer">
+                            <div class="container">
+                                <div class="row competence-espace">
+                                    <h5 class="col-12 text-center modal-text-title">Compétences acquises</h5>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=equipe">Esprit d'équipe</a>
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=organisation">Organisation</a>
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=flexibilite">Flexibilité</a>
+                                    <a class="btn-realisation btn-primary col-auto" href="blog.html?modal=autonomie">Autonomie</a>
+                                </div>
+                            </div>
+                        </div>
                       </div>
                     </div>
                   </div>
