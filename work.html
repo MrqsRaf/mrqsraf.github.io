@@ -305,29 +305,29 @@
                             </h4>
                         </div>
                         <div class="modal-body">
-                            <p>Le projet VGAIA a été un gros bond vers l’avant qui nécessitaient de nombreuses capacités, cela m’a permis de voir une net amélioration depuis mon arrivée à INTECH.<br>
+                            <p>Le projet VGAIA a été un gros bond vers l’avant qui nécessitait de nombreuses capacités, cela m’a permis de voir une net amélioration depuis mon arrivée à INTECH.<br>
                                  Il aura surtout été une grosse introduction à une technologie que j’utilise quotidiennement en entreprise, et dans mes projets personnels: la virtualisation.</p>
 
 <h5>Description</h5>
 
-<p>VGAIA est un outil permettant rendre fournir et d’automatiser la création d’une infrastructure et l'installation de services sur celles-ci.</p>
+<p>VGAIA est un outil permettant de fournir et d’automatiser la création d’une infrastructure et l'installation de services sur celles-ci.</p>
 
 <p>Mais concrètement, ça veut dire quoi ?</p>
 
-<p>Cet outil se présentait sous forme d’une plateforme web, avec plusieurs champs à remplir : système d’exploitation, mémoire vive, nombre de CPU, capacité de stockage, services a installés ( MySQL, Apache, Postfix, bind9…).</p>
+<p>Cet outil se présentait sous forme d’une plateforme web, avec plusieurs champs à remplir : système d’exploitation, mémoire vive, nombre de CPU, capacité de stockage, services a installer ( MySQL, Apache, Postfix, Bind9…).</p>
 
-<p>Ces champs remplis selon les besoins des utilisateurs, étaient ensuite récupérés afin de remplir un outil de provisionning Ansible.
-Ce logiciel de provisinning, comme son nom l’indique, allait créer la machine demandée, et la provisionner, c’est-à-dire, lui apporter les paquets et les configurations nécessaires afin d’avoir une machine prête à l’emploi en seulement quelques minutes.</p>
+<p>Ces champs remplis selon les besoins des utilisateurs, étaient ensuite récupérés et utilisés par l'outil de provisionning Ansible.
+Ce logiciel de provisionning, comme son nom l’indique, allait créer la machine demandée, et la provisionner, c’est-à-dire, lui apporter les paquets et les configurations nécessaires afin d’avoir une machine prête à l’emploi en seulement quelques minutes.</p>
 
 <p>Cette utilisation qui peut paraitre très simple du point de vue de l’utilisateur, incluait tout de même de nombreux services.</p>
 
 <h5>Objectifs</h5>
 
-<p>Il fallait tout d’abord créer une interface WEB, et l’exposer sur un DNS local (bind9) à l’aide d’un serveur LAMP (Linux Apache MySQL PHP).</p>
+<p>Il fallait tout d’abord créer une interface WEB, et l’exposer sur un DNS local (Bind9) à l’aide d’un serveur LAMP (Linux Apache MySQL PHP).</p>
 
-<p>Installer ensuite Ansible et le configurer afin qu’il récupère tous les champs nécessaire à la création de la machine venait ensuite.</p>
+<p>Nous devions aussi installer Ansible et le configurer afin qu’il récupère tous les champs nécessaires à la création de la machine.</p>
 
-<p>Afin de pouvoir héberger nos machines virtuelles, nous avions besoin d’une autre équipe dont le projet était la création d’un VCenter, un serveur de  gestion centralisée de machine virtuelles.
+<p>Afin de pouvoir héberger nos machines virtuelles, nous avions besoin d’une autre équipe dont le projet était la création d’un VCenter, un serveur de  gestion centralisée de machines virtuelles.
 
 Nous devions alors configurer un client VSphere, qui se connecterait à ce VCenter afin d’y installer les machines sur un ESXI dédié.<br>
 Un ESXI est tout simplement un hyperviseur, donc un service permettant au serveur hôte de prendre en charge plusieurs machines virtuelles.</p>
@@ -342,9 +342,9 @@ Un ESXI est tout simplement un hyperviseur, donc un service permettant au serveu
 
 <p>Je vous invite à lire l’article <a href="blog.html?modal=equipe">esprit d’équipe</a> pour en savoir plus!</p>
 
-<p>Malgré cela, quand nous nous sommes rendu comptes de la charge de travail qu’il restait à produire afin de le rendre dans les temps, nous avons d’autant plus travailler afin de rendre un produit fonctionnel.
+<p>Malgré cela, quand nous nous sommes rendu compte de la charge de travail qu’il restait à effectuer afin de rendre le produit dans les temps, nous avons d’autant plus travaillé afin qu'il soit fonctionnel à la date prévue.
 
-Lors de la date de fin du projet, nous étions capable de fournir une machine virtuelle à notre utilisateur selon ses besoins, excepté quelques services qui n’étaient pas disponible.<br>
+Lors de la date de fin du projet, nous étions capable de fournir une machine virtuelle à notre utilisateur selon ses besoins, excepté quelques services qui n’étaient pas disponibles.<br>
 Par exemple, l’utilisateur pouvait avoir une machine virtuelle avec le système d’exploitation qu’il souhaitait, mais ne pouvait pas décider d’installer Postfix sur celle-ci.</p>
 
 <p>Le projet n’a alors pas été une entière réussite, mais aura tout de même rempli les objectifs principaux.
@@ -355,7 +355,7 @@ Pour ma part, ce projet m’a beaucoup apporté techniquement, mais aussi humain
 
 <p>J’ai principalement travaillé sur 2 tâches:</p>
 
-<p>La première, était la création de la plateforme WEB, afin de fournir une interface utilisateur afin de paramétrer sa machine virtuelle.</p>
+<p>La première, était la création de la plateforme WEB, afin de fournir une interface utilisateur pour paramétrer sa machine virtuelle.</p>
 
 <p>Deuxièmement, j’ai également contribué à la configuration d’Ansible, afin qu’il récupère les options entrées par l’utilisateur, et qu’il s’en serve ensuite pour créer la machine virtuelle.</p>
 
@@ -483,14 +483,14 @@ Pour ma part, ce projet m’a beaucoup apporté techniquement, mais aussi humain
                             </h4>
                         </div>
                         <div class="modal-body">
-                            <p>GoodRentree est né suite à une discussion avec un ami du lycée qui était passionné par l’auto-entreprenariat. Celui-ci avait déjà fait plusieurs plateformes d’e-commerce, et avait réussi à grandement m’intéresser sur le sujet.<br>
+                            <p>GoodRentree est né suite à une discussion avec un ami du lycée qui était passionné par l’auto-entrepreneuriat. Celui-ci avait déjà fait plusieurs plateformes d’e-commerce, et avait réussi à grandement m’intéresser sur le sujet.<br>
 Il m’a alors proposé de créer notre propre plateforme de dropshipping, et m’a laissé trouver quels produits nous allions vendre sur celle-ci.</p>
 
 <h5>Description</h5>
 
-<p>Comme nous étions au début des vacances, j’ai pensé qu’il serait intéressant de vendre des fournitures scolaires dans les thèmes à la mode de 2018: Fortnite, et les mangas!</p>
-<p>Le DropShipping consiste à vendre un produit que l’on n’entrepose pas nous même. On ne fait que la passerelle entre le client et le fournisseur.
-Le client se rend alors sur notre plateforme, choisi les produits qu’il souhaite, et une fois ces produits achetés, nous nous occupons de transmettre ses informations au fournisseur afin que le client soit directement livré chez lui.</p>
+<p>Comme nous étions au début des vacances, j’ai pensé qu’il serait intéressant de vendre des fournitures scolaires dans les thèmes à la mode de 2018: Fortnite et les mangas!</p>
+<p>Le dropshipping consiste à vendre un produit que l’on n’entrepose pas nous même. On ne fait que la passerelle entre le client et le fournisseur.
+Le client se rend alors sur notre plateforme, choisit les produits qu’il souhaite, et une fois ces produits achetés, nous nous occupons de transmettre ses informations au fournisseur afin que le client soit directement livré chez lui.</p>
 <p>Le bénéfice se fait alors en vendant le produit légèrement plus cher que si on achète celui-ci directement chez le fournisseur.</p>
 
 <h5>Objectifs</h5>
@@ -498,8 +498,8 @@ Le client se rend alors sur notre plateforme, choisi les produits qu’il souhai
 <p>Pour présenter un produit fonctionnel, et attirer de potentiels clients, il y avait 3 objectifs principaux à accomplir :
 <ul>
     <li>Créer une plateforme d’e-commerce, l’exposer sur internet, et y ajouter les produits.</li>
-    <li>Mettre en place de l’automatisation, qui commanderai les produits demandés par le client chez le fournisseur, avec les informations de celui-ci.</li>
-    <li>Faire de la communication, grâce aux publicités sur les réseaux sociaux</li>
+    <li>Mettre en place de l’automatisation, qui commandera les produits demandés par le client chez le fournisseur, avec les informations de celui-ci.</li>
+    <li>Faire de la communication, grâce aux publicités sur les réseaux sociaux.</li>
 </ul>
 
 <h5>Accomplissement des objectifs</h5>
@@ -510,14 +510,14 @@ Le client se rend alors sur notre plateforme, choisi les produits qu’il souhai
 <p>J’ai mis en place l’automatisation grâce à des plugins que l’on pouvait ajouter à ce Template, et ai ajouté tous les produits.</p>
 <p>La partie conséquente dans la création de la plateforme, aura été de lui donner une image professionnelle, ce qui a été la partie la plus difficile, en conséquence de mes capacités en développement Web assez limitées cette année-là.</p>
 
-<p>La communication s’est principalement faite sur Facebook, grâce à leur outil de publicité. Il nous fallait alors choisir une niche, c’est-à-dire un ensemble de personne qui correspondent aux critères recherchés.<br>
+<p>La communication s’est principalement faite sur Facebook, grâce à leur outil de publicité. Il nous fallait alors choisir une niche, c’est-à-dire un ensemble de personne qui correspondent à nos critères.<br>
      Pour notre cas, ça aura été par exemple, les parents d’enfants assez jeunes, résidant dans plusieurs pays d’Europe.</p>
 
 <h5>Résultats</h5>
 
 <p>On ne peut pas dire que ce projet a été une réussite, mais il n’a pas été un échec non plus!<br>
-En effet, nous n’avons ni perdu, ni gagner d’argent. Cela a été dû à de grosses dépenses sur la publicité Facebook, mais également à un taux d’engagement assez faible.</p>
-<p>Eh oui, malgré le fait que beaucoup de personnes se rendaient sur notre site-web, je pense qu’à cause de mes capacités assez limitées en design web, celui-ci ne paraissait pas assez professionnel, et décourageait les potentiels client a finalement acheter.</p>
+En effet, nous n’avons ni perdu, ni gagné d’argent. Cela a été dû à de grosses dépenses sur la publicité Facebook, mais également à un taux d’engagement assez faible.</p>
+<p>Eh oui, malgré le fait que beaucoup de personnes se rendaient sur notre site-web, je pense qu’à cause de mes capacités assez limitées en design web, celui-ci ne paraissait pas assez professionnel, et décourageait les potentiels client à finalement acheter.</p>
 
 <p>J’ai tout de même décidé d’ajouter ce projet à mon Portfolio, car il m’aura fait progresser en développement Web, et m’aura appris à créer un plan de communication, qui m’aura été utile ensuite pour <a href="work.html?modal=springtech">Springtech</a> et <a href="work.html?modal=thedoor">The Door</a>.</p>
 
@@ -548,41 +548,41 @@ En effet, nous n’avons ni perdu, ni gagner d’argent. Cela a été dû à de 
                             </h4>
                         </div>
                         <div class="modal-body">
-    <p>Tout comme le projet « The Door », Spring Tech a été un projet qui restera à jamais gravé dans ma mémoire (Décidément, les projets de formation humaine !). Spring Tech a été une expérience qui m’a permis de fortifier les liens avec mes équipiers, mais également de voyager à Berlin et de découvrir une culture différente.</p>
+    <p>Tout comme le projet <a href="work.html?modal=thedoor">The Door</a>, Spring Tech a été un projet qui restera à jamais gravé dans ma mémoire (Décidément, les projets de formation humaine !). Spring Tech a été une expérience qui m’a permis de fortifier les liens avec mes équipiers, mais également de voyager à Berlin et de découvrir une culture différente.</p>
 
 <h5>Description</h5>
 
-<p>Spring Tech avait un objectif très simple :  Organiser un voyage linguistique et convivial en Europe regroupant des étudiants de différents semestres In’tech. Ce voyage durerait environ 3 jours, et allaient comprendre le plus d’activités possibles, avec un prix le plus bas possible !
+<p>Spring Tech avait un objectif très simple :  Organiser un voyage linguistique et convivial en Europe regroupant des étudiants de différents semestres In’tech. Ce voyage durerait environ 3 jours, et allait comprendre le plus d’activités possibles, avec un prix le plus bas possible !
 Malgré un objectif tournant autour des vacances et de la fête, ce projet demandait une charge de travail conséquente.</p>
 
 <h5>Objectifs</h5>
 
-<p>Les objectifs étaient également très nombreux pour pouvoir proposer un voyage correspondant aux attentes de nos « clients », tout en leur évitant le plus d’interactions possible.</p>
+<p>Les objectifs étaient, comme sur <a href="work.html?modal=thedoor">The Door</a>, très nombreux pour pouvoir proposer un voyage correspondant aux attentes de nos « clients », tout en leur évitant le plus d’interactions possible.</p>
 <ul>
-<li>Générer des recettes pour rendre le prix du voyage le plus abordable possible:</li>
+<li>Générer des recettes pour rendre le prix du voyage le plus abordable possible</li>
    <p>Pour pouvoir générer le plus d’argent possible, afin de baisser le prix du voyage pour chacun, nous avons dû organiser des repas et des « cafeteria » au sein de l’école.</p>
 
 <li>Analyser les différentes offres du marché pour proposer les prix les plus bas possible</li>
-	<p>Pour ce faire, nous avons bien évidemment utiliser des comparateurs de transports et d’hôtel, mais nous avons également appelé beaucoup (beaucoup) de compagnies de transports, d’hôtel, afin d’avoir un prix fixe qui nous permettrait d’établir un plan de trésorerie le plus tôt possible. Nous devions également réserver le plus tôt possible afin d’éviter une hausse des prix.</p>
+	<p>Pour ce faire, nous avons bien évidemment utilisé des comparateurs de transports et d’hôtelx, mais nous avons également appelé beaucoup (beaucoup) de compagnies de transports et de logements, afin d’avoir un prix fixe qui nous permettrait d’établir un plan de trésorerie le plus tôt possible. Nous devions également réserver le plus tôt possible afin d’éviter une hausse des prix.</p>
 
 <li>Campagne de communication interne pour attirer le plus de personnes</li>
 <p>La communication au sein de l’école devait se faire assez classiquement. Une campagne de mails et de sondages, des affiches dans toute l’école avec une charte graphique attirante et un passage dans toutes les classes. Mais le meilleur moyen de communication était de proposer un prix bas, car nous proposions ce voyage à des étudiants.</p>
-<li>Mettre en place le voyage, pour que le “client” ait le moins de chose à faire + feuille info pratique</li>
-<p>Cette mise en place comprend toutes les réservations, des logements et des transports, mais surtout l’organisation, du point de rendez-vous, des activités sur place, des budget repas et sortie, etc. C’est ici que la mise en place du planning a été très importante.</p>
+<li>Mettre en place le voyage, pour que le “client” ait le moins de choses à faire + feuille info pratique</li>
+<p>Cette mise en place comprend toutes les réservations, des logements et des transports, mais surtout l’organisation, du point de rendez-vous, des activités sur place, du budget repas et sortie, etc. C’est ici que la mise en place du planning a été très importante.</p>
 <li>Mise en place d’un planning pour le voyage</li>
-<p>Le planning n’était bien évidemment pas définitif, mais il allait grandement nous servir à prévoir ce qu’il était possible de faire ou non. Il a permis également de faire le plus d’activités possible, en créant des « chemins » en fonction des lieux demandés.</p>
+<p>Le planning n’était bien évidemment pas définitif, mais il allait grandement nous servir à prévoir ce qu’il était possible de faire ou non. Il a permis également de faire un maximum d'activités, en créant des « chemins » en fonction des lieux demandés.</p>
 </ul>
 
 <h5>Ma contribution</h5>
 
 <p>Pour ce qui est de générer des recettes, nous savons tous mis la main à la patte ! Nous étions bien évidemment tous présents afin de vendre nos bons petits plats, ou pour vendre du café et des viennoiseries encore chaudes.</p>
-<p>Mais la partie sur laquelle je me suis le plus penché a été la mise en place des sondages et du planning en fonction des réponses de nos « clients ». J’ai dû établir ce planning pour 3 jours, car il y avait une charge de travail bien assez élevé pour que chaque membre du groupe doive travailler en autonomie.</p>
+<p>Mais la partie sur laquelle je me suis le plus penché a été la mise en place des sondages et du planning en fonction des réponses de nos « clients ». J’ai dû établir ce planning pour 3 jours, car il y avait une charge de travail bien assez élevée pour que chaque membre du groupe doive travailler en autonomie.</p>
 
 <h5>Résultats</h5>
 
-<p>La communication était très bien réussi, et beaucoup d’élèves étaient intéressé par ce voyage pour découvrir Berlin, mais malgré un gros travail afin de générer le plus de recettes possibles, le prix était encore un peu trop haut. C’est la principale raison qui en a démotivé beaucoup, et nous sommes finalement partis au total de 8 membres.</p>
+<p>La communication était très bien réussi, et beaucoup d’élèves étaient intéressés par ce voyage pour découvrir Berlin, mais malgré un gros travail afin de générer le plus de recettes possible, le prix était encore un peu trop haut. C’est la principale raison qui en a démotivé beaucoup, et nous sommes finalement partis au total de 8 membres.</p>
 <p>Le voyage en lui-même a été très bien organisé, et tout s’est passé comme on le souhaitait.<br>
-Nous n’avons alors pas vraiment atteint notre objectif pour ce qui était du nombre de participants, mais ce projet a été une énorme réussite pour nous tous, car nous avons réussi à remplir les nombreux objectifs présents pour le bon déroulement de celui-ci</p>
+Nous n’avons alors pas vraiment atteint notre objectif pour ce qui était du nombre de participants, mais ce projet a été une énorme réussite pour nous tous, car nous avons réussi à remplir les nombreux objectifs présents pour le bon déroulement de celui-ci.</p>
 
 <p><img src="assets/img/gallery/springtech-team.png" class="img-fluid" style="position:relative;display: block;margin-left: auto;margin-right: auto;"></p>
 </div>
