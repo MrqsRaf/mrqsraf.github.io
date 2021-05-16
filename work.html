@@ -469,8 +469,136 @@ Pour ma part, ce projet m’a beaucoup apporté techniquement, mais aussi humain
                   </div>
                   <div class="modal fade ods" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        À venir !
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>OPENDATASOFT
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                            </h4>
+                            </div>
+                        <div class="modal-body">
+                        <p>Cet article sera légèrement différent des autres réalisations, car il contiendra les 3 plus gros projets auxquels j’ai pu participer lors de mes 2 années d’alternance chez Opendatasoft. J’ai tenu à réunir ces 3 projets dans un seul article, car ils sont tous fortement liés, et comptent pour moi comme un seul très gros projet.
+
+                        Le plan ne sera pas alors exactement le même que les autres articles, mais j’espère tout de même vous faire découvrir une grande partie ce que j’ai pu réaliser dans cette entreprise.</p>
+
+                        <p>Lors de ces 2 années, j’ai occupé le poste de Site Reliability Engineer, ou SRE, qui consiste à construire une infrastructure fiable, et possiblement évolutive.<br>
+                            Toutes les opérations nécessaires, seront alors exécutées à partir de différents logiciels d’automatisation, comme Saltstack, dont j’ai pu vous parler dans ma compétence <a href="blog.html?modal=virtualisation">virtualisation</a>, ou encore Terraform dont j’ai détaillé son utilisation dans l’article <a href="blog.html?modal=cloud">cloud</a>.</p>
+                        <p>Avoir le plus d’automatisation possible, nous permettra ainsi de ne pas passer tout notre temps à des tâches « opérationnelles », tel que réparer des erreurs, répondre à des demandes clients, ou toute administration habituelle.<br>
+                             Nous pourrons alors nous servir de ce temps gagné, afin de développer de nouvelles fonctionnalités.
+
+                        Mais j’ai également eu de nombreux projets en tant que Devops. Plus précisément j’ai participé à la création d’un serveur d’intégration et de déploiement continus.</p>
+
+
+                        <h4 class="ods_titre">Création du serveur d’intégration continue</h4>
+
+                        <h5>Description</h5>
+
+                        <p>Arrivé en stage chez Opendatasoft, j’ai dû recréer notre serveur d’intégration continue, qui était hébergé sur une vieille version d'Ubuntu, mais également sur une version de Jenkins Obsolète.
+
+                        L’intégration continue consiste à tester le code modifié ou créé, avant que celui-ci ne soit déployé sur les environnements de production. Cela permet d’être certain que le nouveau code ne sera pas un souci pour l’application.</p>
+
+                        <p>Jenkins, quant à lui, est un logiciel permettant de mettre en place cette intégration continue, de manière automatisée. Concrètement, cela veut dire qu’il lancera automatiquement des tests sur le nouveau code publié, sur une « branche de test ».
+                        Cette automatisation est possible grâce à la connexion de Jenkins sur Github, et la détection automatique du code mis à jour sur Github.</p>
+
+                        <h5>Objectifs</h5>
+
+                        <p>Pour ce projet, j’ai dû décider d’un nouvel outil d’intégration continue, afin de choisir le plus adapté à nos besoins. Pour ce faire, il fallait tout d’abord que je sache les différents besoins des développeurs, j’ai ensuite pu organiser une réunion afin de présenter les avantages et inconvénients de chacun.<br>
+                             C’est finalement encore une fois Jenkins qui a été choisi, mais dans sa version la plus récente.
+
+                        Afin de me familiariser avec le code de la plateforme, AWS, et tous les services nécessaires au bon fonctionnement de ce serveur, j’ai fait tout cela … à la main !</p>
+
+                        <p>Cela veut dire, pas de Saltstack, pas de Terraform, mais une création du serveur directement sur AWS, une installation de chaque service, et la configuration de Jenkins étape par étape.
+                        Ce serveur était dans notre zone dite de pré-production, c’est-à-dire une infrastructure se rapprochant au maximum de celles de production, afin d’y effectuer les tests que nous souhaitons sans risquer une interruption de service ou des corruptions des données.</p>
+
+                        <h5>Résultats</h5>
+
+                        <p>Ce serveur d’intégration continue a été un long projet, non seulement car j’avais des connaissances limitées sur toutes les compétences nécessaires, mais aussi car j’étais tout seul à travailler sur ce projet.<br>
+
+                        Il a tout de même été utilisé par toute l’équipe de développeurs durant environ 6 mois, et nous avons pu ensuite analyser tous les axes d’améliorations.
+
+                        C’est ici que Docker intervient.</p>
+
+                        <h4 class="ods_titre">Dockerisation de la plateforme: le déploiement continu</h4>
+
+                        <h5>Description</h5>
+
+                        <p>La dockerisation de la plateforme marquera le début de mon alternance.
+
+                        Docker est un logiciel permettant de lancer ses applications dans des conteneurs isolés. Docker se rapproche de la virtualisation sur certains points, mais est à ne pas confondre avec cette autre technologie !<br>
+                        Ce qu’il faut retenir est que Docker permet de lancer plusieurs applications isolées sur un système hôte et de faire du provisionning afin que ces applications soient fonctionnelles.
+
+                        Dans notre cas, il nous aura servi pour faire ce que l’on appelle du déploiement continu.</p>
+
+                        <p>Nous avons parlé d’intégration continue, qui consiste à tester le code avant de le déployer en production. Le déploiement continu lui, déploie le code ! Dans un environnement Docker isolé, bien évidemment, et sur un serveur de pré-production, n’ayez crainte.</p>
+                        <p>Nous pouvons alors automatiser le déploiement d’une plateforme dont le code a été modifié. Cela sert concrètement à tester son code, comme le verrait l’utilisateur final en production: sur l’interface utilisateur.<br>
+                            Nous pouvons alors voir nos nouvelles fonctionnalités, sans que cela soit déjà déployé en production.
+                        Tout le monde peut alors aujourd’hui tester de nouvelles fonctionnalités, sans avoir besoin de connaissances pour déployer une plateforme en local, un clic sur un bouton et le nouvel environnement est prêt !</p>
+
+                        <h5>Objectifs</h5>
+
+                        <p>Nous étions 2 sur ce projet, et il a également duré assez longtemps, car il comprenait de nombreux objectifs.</p>
+
+                        <p>Le premier était bien évidemment de réussir à migrer notre plateforme sur tout un environnement Docker, ce qui a été un travail conséquent.</p>
+
+                        <p>Le deuxième était de créer plusieurs serveurs, composant une infrastructure isolée, afin d’y accueillir un orchestrateur Jenkins, 2 serveurs d’intégration continue, et un serveur de déploiement continu.</p>
+                        <p>L’orchestrateur Jenkins ne servira qu’à envoyer des ordres aux différentes machines, afin d’y faire des tests ou du déploiement.
+                        Les tests d’intégrations continue se font à présent sur des environnements docker également.</p>
+
+                        <p>Troisièmement, il fallait recréer et configurer Jenkins et les différents environnements Docker (test ou déploiement).</p>
+
+                        <p>Ces objectifs n’étaient bien évidemment pas au nombre de 3, mais comprenaient de nombreuses autres problématiques.
+
+                        Cette fois-ci, toute cette infrastructure était créée à l’aide de Saltstack et de Terraform, afin de pouvoir automatiser l’entière création de ces éléments.</p>
+
+                        <h5>Résultats</h5>
+
+                        <p>Malgré de nombreuses difficultés sur la dockerisation de la plateforme, cet environnement de test est encore utilisé aujourd’hui, et est complétement automatisé !
+                        Chaque nouvelle fonctionnalité est alors testée, et peut être déployée au bon vouloir de l’utilisateur.</p>
+
+                        <h5>Ma contribution</h5>
+
+                        <p>Pour ce projet, j’ai principalement participé à la dockerisation de la plateforme.
+
+                        Mais j’ai également créé les serveurs hôtes, et ai effectué le début de la configuration de l’orchestrateur Jenkins. C’est mon collègue qui a fini ensuite cette configuration afin de pouvoir totalement automatiser nos déploiements et nos tests.</p>
+
+
+                        <h4 class="ods_titre">Création de la nouvelle infrastructure de pré-production</h4>
+
+                        <h5>Description</h5>
+
+                        <p>Ces nouveaux serveurs composaient, comme j’ai pu le dire, une infrastructure isolée de pré-production hébergée sur AWS Irlande.
+
+                        Effectivement, nous avions déjà une infrastructure de pré-production avant cela, qui nous servait tout simplement à faire différents tests de configurations, afin de nous assurer que cela n’allait pas affecter la production.
+
+                        Mais cet environnement de pré-production avait 2 problèmes:</p>
+
+                        <p>Premièrement, ces serveurs étaient obsolètes, car le système était une vieille version d'Ubuntu. L’infrastructure n’était alors plus du tout similaire à la production (version des paquets, sécurité, maintenabilité…)</p>
+
+                        <p>Deuxièmement, cette infrastructure était un VPC ( Virtual Private Cloud ) hébergé sur la région « Paris » de AWS. Cette région proposait un temps de réponse plus bas, dû à sa proximité, mais était plus onéreuse qu’une autre, comme L’Irlande par exemple.<br>
+                        Il fallait alors recréer une toute nouvelle infrastructure de pré-production, et la faire rejoindre celle d’intégration continue. Tous ces serveurs feront alors partie d’un même VPC.</p>
+
+                        <h5>Objectifs</h5>
+
+                        <p>J’étais seul sur ce projet.
+
+                        J’ai dû tout d’abord créer les différents serveurs à l’aide de Terraform: Frontend, Backend, HA Proxy, et plusieurs autres serveurs hébergeant des services nécessaires au bon fonctionnement de la plateforme.
+
+                        Après avoir déployé ces différentes instances sur le cloud AWS, il me fallait alors les configurer, encore une fois à l’aide de Saltstack.
+
+                        Une fois mon nouvel environnement de pré-production créé, je pouvais supprimer l’ancien.</p>
+
+                        <p>Ces 2 seuls gros objectifs, contiennent bien sûr de nombreuses tâches, qui m’auront valu environ 3 mois de travail.
+                        Je n’ai d’ailleurs pu supprimer l’ancien environnement que 8 mois après, car celui-ci était encore utilisé par un service indispensable, qui m’aura valu un autre projet assez conséquent.</p>
+
+                        <h5>Résultats</h5>
+
+                        <p>Aujourd’hui, l’ancien environnement de pré-production est supprimé, et le nouveau est utilisé régulièrement !</p>
+
+
+                        <h4>Conclusion</h4>
+
+                        <p>Ces 3 gros projets, parmi plusieurs autres, m’auront permis de grandement évoluer techniquement. Jamais je n’aurais pensé être capable de réaliser ceux-ci il y a 2 ans.<br>
+                        Même si ces projets auraient peut-être pu être effectués plus rapidement par quelqu’un de plus expérimenté, cela m’a permis d’évoluer aux côtés d’Opendatasoft, et d’avoir aujourd’hui une palette de compétences techniques qui me seront indispensables dans mon avancée professionnelle.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
