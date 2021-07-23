@@ -4341,7 +4341,8 @@ hero-btn {
 /* line 125, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_headerMenu.scss */
 
 .header-sticky.sticky-bar {
-    background:rgba(25, 25, 25, 0.5);
+    background:rgba(25, 25, 25, 0.7);
+    backdrop-filter: blur(3px);
 }
 
 
